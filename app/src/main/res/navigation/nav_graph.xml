@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allMessageFragment">
+
+    <fragment
+        android:id="@+id/allMessageFragment"
+        android:name="com.example.messageapp.ui.fragment.AllMessageFragment"
+        android:label="all_message_fragment"
+        tools:layout="@layout/all_message_fragment" >
+        <action
+            android:id="@+id/action_allMessageFragment_to_messageDetailFragment"
+            app:destination="@id/messageDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageDetailFragment"
+        android:name="com.example.messageapp.ui.fragment.MessageDetailFragment"
+        android:label="fragment_message_detail"
+        tools:layout="@layout/fragment_message_detail" />
+</navigation>
