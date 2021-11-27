@@ -18,5 +18,6 @@
         android:id="@+id/messageDetailFragment"
         android:name="com.example.messageapp.ui.fragment.MessageDetailFragment"
         android:label="fragment_message_detail"
+        app:popUpTo="@id/allMessageFragment"
         tools:layout="@layout/fragment_message_detail" />
 </navigation>

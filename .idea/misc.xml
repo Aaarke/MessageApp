@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_message.xml" value="0.14266304347826086" />
+        <entry key="app/src/main/res/layout/all_message_fragment.xml" value="0.13179347826086957" />
+        <entry key="app/src/main/res/layout/fragment_message_detail.xml" value="0.16394927536231885" />
+        <entry key="app/src/main/res/layout/item_hour_ago.xml" value="0.17481884057971014" />
+        <entry key="app/src/main/res/layout/item_local_message.xml" value="0.375" />
       </map>
     </option>
   </component>

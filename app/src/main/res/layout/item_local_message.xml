@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="message"
+            type="com.example.messageapp.model.LocalMessage" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/padding_2_dp"
+        android:background="@color/black"
+        app:cardCornerRadius="@dimen/padding_2_dp"
+        android:layout_margin="@dimen/padding_2_dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:background="@color/black"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_message_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{message.number}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16_sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="AX-MYNTRA" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_message_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_5_dp"
+                android:text="@{message.body}"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_message_header"
+                tools:text="AX-MYNTRA"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
