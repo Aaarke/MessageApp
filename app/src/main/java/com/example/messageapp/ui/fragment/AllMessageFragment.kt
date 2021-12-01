@@ -139,16 +139,13 @@ class AllMessageFragment : Fragment() {
             } else {
                 checkPermissions()
             }
-            if (permissions[RECEIVE_SMS] == true) {
-                registerBroadCastReceiver()
-            } else {
+            if (permissions[RECEIVE_SMS] == false) {
                 checkPermissions()
+
             }
         }
 
-    private fun registerBroadCastReceiver() {
 
-    }
 
 
     override fun onDestroy() {
